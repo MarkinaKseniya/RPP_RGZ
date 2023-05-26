@@ -13,7 +13,7 @@ from aiogram.dispatcher import FSMContext
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton, Message
 
 # Токен бота
-API_TOKEN = 'RPP_RGZ_BOT'
+API_TOKEN = 'RPP_RGZ_coolBOT'
 # Таймер для перерасчета показателей акций (24 часа)
 WAIT_TIME_SECONDS = 60 * 60 * 24
 # Конфиг для локальной БД
@@ -28,7 +28,7 @@ class Form(StatesGroup):
     show = State()
 
 ticker = threading.Event()
-bot_token = os.getenv('RPP_RGZ_BOT')
+bot_token = os.getenv('RPP_RGZ_coolBOT')
 bot = Bot(token=bot_token)
 dp = Dispatcher(bot, storage=MemoryStorage())
 
